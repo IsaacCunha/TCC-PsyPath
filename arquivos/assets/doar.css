@@ -1,0 +1,134 @@
+:root{
+    --base-font: 'Montserrat', sans-serif;
+    --titulo-font: 'Pacifico', cursive;
+}
+body{
+    font-family: var(--titulo-font);
+}
+.doar-body{
+    display: flex;
+    padding-bottom: 5%;
+    padding-top: 15vh;
+}
+.doar-imagem_container{
+    width: 40%;
+    height: 85vh; 
+}
+.doar-imagem_imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    padding-top: 10%;
+}
+.doar-direita_container{
+    width: 60%;
+    height: 85vh; 
+}
+.doar-card{
+    display: flex;
+    width: 100%;
+}
+.doar-cardcontainer{
+    width:270px;
+    height: 350px;
+    background-color:white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.doar-cardcontainer_titulo{
+    font-size: 5rem;
+    margin-top: auto;
+}
+.doar-cardcontainer_texto{
+    margin-bottom: auto;
+    font-size: 1.5rem;
+}
+.span{
+    font-size: 2.5rem;
+}
+.doar-cardcontainer_botao{
+    background-color: #9dff00;
+    width: 180px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    align-items: center;
+    font-size: 1.4rem;
+    border: solid transparent ;
+    border-radius: 50px;
+}
+.doar-cardcontainer_botao:hover{
+    cursor: pointer;
+    background-color: rgb(19, 157, 19);
+}
+.doar-texto{
+    text-align: center;
+    font-size: 2rem;
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: justify;
+    padding-bottom: 5vh;
+
+}
+#doar-texto_titulo{
+    text-align: center;
+    padding-top: 2vh;
+    font-family: var(--titulo-font);
+    font-size: 3rem;
+    padding-bottom: 1vh;
+}
+
+
+@media (max-width: 1650px)
+{
+  .doar-cardcontainer
+   {
+    scale: 80%;
+   }
+   .doar-texto{
+    font-size: 1.5rem;
+   }
+   .doar-imagem_imagem{
+    scale: 50%;
+    left: 0px;
+    top: 0px;
+    transform: translateX(-200px);
+   }
+}
+@media (max-width: 1300px)
+{
+    .doar-body{
+        flex-direction: column;
+        width: 100%;
+    }
+    .doar-cardcontainer
+    {
+        scale: 80%;
+    }
+    .doar-direita_container{
+        width: 100%;
+        height: 65vh;
+    }
+    .doar-imagem_imagem{
+        margin-left: auto;
+        margin-right: auto;
+        height: 600px;
+        padding-top: 0;
+        position: relative;
+        transform: translateY(-200px);
+    }
+    .doar-imagem_container{
+        width: 100%;
+        height: 45vh;
+        display: flex; 
+    }   
+}

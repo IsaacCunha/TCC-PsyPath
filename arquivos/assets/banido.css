@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(200, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+}
+.banido-titulo{
+    font-size: 6rem;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+.banido-texto{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+.container-ban{
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+.banido-img{
+    padding-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+#banido-email{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 3vh;
+}
+.container-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.botao-banido{
+    background-color: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 15px;
+    border-color: transparent;
+    color: rgb(200, 0, 0);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    transition: ease 0.2s;
+}
+
+.botao-banido:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+}

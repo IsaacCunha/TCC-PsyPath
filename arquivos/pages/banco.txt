@@ -1,0 +1,101 @@
+create database psypath;
+use psypath;
+create table contas(
+    id int (9) primary key not null AUTO_INCREMENT,
+    nome varchar (255) not null,
+    nickname varchar (255) not null,
+    email varchar (255) not null,
+    senha varchar (255) not null,
+    descricao varchar (255),
+    cpf varchar (14),
+    cep varchar (9),
+    universidade varchar (255),
+    semestre date,
+    crm int (6),
+    nivel_acesso int (9) not null,
+    banimento int (9) not null,
+    fk_nome varchar(255)
+);
+
+create table chat1(
+    id_mensagem int primary key not null AUTO_INCREMENT,
+    mensagem varchar(255) not null,
+    chat varchar(9),
+    id int(9),
+    email varchar (255) not null,
+    nickname varchar (255) not null,
+    foreign key (id) references contas(id),
+    foreign key (nickname) references contas(nickname),
+    foreign key (email) references contas(email)
+);
+
+create table chat2(
+    id_mensagem int primary key not null AUTO_INCREMENT,
+    mensagem varchar(255) not null,
+    chat varchar(9),
+    id int(9),
+    email varchar (255) not null,
+    nickname varchar (255) not null,
+    foreign key (id) references contas(id),
+    foreign key (nickname) references contas(nickname),
+    foreign key (email) references contas(email)
+);
+
+create table chat3(
+    id_mensagem int primary key not null AUTO_INCREMENT,
+    mensagem varchar(255) not null,
+    chat varchar(9),
+    id int(9),
+    email varchar (255) not null,
+    nickname varchar (255) not null,
+    foreign key (id) references contas(id),
+    foreign key (nickname) references contas(nickname),
+    foreign key (email) references contas(email)
+);
+
+create table chat4(
+    id_mensagem int primary key not null AUTO_INCREMENT,
+    mensagem varchar(255) not null,
+    chat varchar(9),
+    id int(9),
+    email varchar (255) not null,
+    nickname varchar (255) not null,
+    foreign key (id) references contas(id),
+    foreign key (nickname) references contas(nickname),
+    foreign key (email) references contas(email)
+);
+
+create table chat5(
+    id_mensagem int primary key not null AUTO_INCREMENT,
+    mensagem varchar(255) not null,
+    chat varchar(9),
+    id int(9),
+    email varchar (255) not null,
+    nickname varchar (255) not null,
+    foreign key (id) references contas(id),
+    foreign key (nickname) references contas(nickname),
+    foreign key (email) references contas(email)
+);
+
+create table chat6(
+    id_mensagem int primary key not null AUTO_INCREMENT,
+    mensagem varchar(255) not null,
+    chat varchar(9),
+    id int(9),
+    email varchar (255) not null,
+    nickname varchar (255) not null,
+    foreign key (id) references contas(id),
+    foreign key (nickname) references contas(nickname),
+    foreign key (email) references contas(email)
+);
+create table fotos(
+id int auto_increment PRIMARY KEY,
+nome varchar(255) not null,
+data datetime
+);
+create table laudos(
+id int auto_increment PRIMARY KEY,
+nome varchar(255) not null,
+data datetime
+);
+ALTER TABLE chat2 ADD CONSTRAINT fk_nome_fotos FOREIGN KEY(fk_nome_fotos) REFERENCES fotos (nome_fotos);

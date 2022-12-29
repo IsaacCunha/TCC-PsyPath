@@ -1,0 +1,74 @@
+.perfil-icon{
+	margin-left: auto;
+	margin-right: 3%;
+	height: 14vh;
+  width: 14vh;
+  border-radius: 50%;
+  max-height: 14vh;
+  max-width: 14vh;
+}
+.header-container{
+    height: 15vh;
+    width: 100vw;
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    position: fixed;
+
+    z-index: 999;
+}
+.header-link{
+	font-family: var(--base-font);
+    font-size: 2rem;
+	margin-left: auto;
+}
+#center-icon-menu{
+    margin-right: auto;
+    margin-left: auto;
+}
+.link-header{
+    background-color: transparent;
+    margin-right: 20px;
+    padding: 20px;
+    font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #ffbe39;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: auto;
+    max-height: 15vh;
+}
+.link-header img{
+    height: 5vh;
+    width: 5vh;
+}
+
+.a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
