@@ -31,7 +31,7 @@
 
 		<?php if(!isset($_SESSION['id'])){ ?>
 			<a class="link-header a" href="../pages/cadastro_estudante.php#page-end"><p>Cadastrar-se</p></a>
-		<?php }?>
+		<?php } //testando o update de arquivos do git?>
 
 		<a class="perfil-icon" href="../pages/perfil.php"><?php if (isset($_SESSION['id'])){ echo "<img class='perfil-icon' src='../".$dir.$nova_foto."' class = perfil_img>";}else{echo "<img class='perfil-icon' src='https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png'>";}?></a>
 	</section>
